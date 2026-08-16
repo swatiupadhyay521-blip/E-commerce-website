@@ -846,49 +846,50 @@ footer a:hover {
 
   /* ================= NAVBAR ================= */
 
-  /* Desktop */
-  .menu-btn {
-    display: none;
-  }
+   .navbar {
+        padding: 15px 5%;
+    }
 
-  /* Mobile */
-  @media (max-width: 768px) {
+    .logo h2 {
+        font-size: 22px;
+    }
+
     .menu-btn {
-      display: block;
-      font-size: 24px;
-      cursor: pointer;
-      color: #000;
-      z-index: 1001;
+        display: block;
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+        z-index: 1001;
     }
 
     .nav-links {
-      display: none;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background: white;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 0;
-      gap: 20px;
-      z-index: 1000;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0077b6;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 20px 0;
+        z-index: 1000;
     }
 
     .nav-links.active {
-      display: flex;
+        display: flex;
     }
 
     .nav-links li {
-      list-style: none;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
     }
 
     .nav-links a {
-      color: #000;
-      text-decoration: none;
-      font-size: 16px;
+        color: white;
+        font-size: 16px;
     }
-  }
 
   /* ================= HERO ================= */
 
