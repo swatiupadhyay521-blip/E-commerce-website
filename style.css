@@ -922,3 +922,413 @@ footer a:hover{
     display:none;
     z-index:1000;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    /* General */
+    .container {
+        width: 90%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+        padding: 15px 5%;
+        position: relative;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 18px;
+        z-index: 999;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        min-height: 90vh;
+        padding: 100px 20px 60px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 80%;
+        text-align: center;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .box {
+        padding: 15px 5px;
+        text-align: center;
+    }
+
+    .box h4 {
+        font-size: 12px;
+    }
+
+
+    /* ================= SECTION TITLE ================= */
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ================= PRODUCTS ================= */
+
+    .product-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .product-info {
+        padding: 20px;
+    }
+
+    .product-info h3 {
+        font-size: 20px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ================= SERVICES ================= */
+
+    .service-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-box {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .service-box h3 {
+        font-size: 19px;
+    }
+
+    .service-box p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ================= STATS ================= */
+
+    .stats .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stat-box h2 {
+        font-size: 28px;
+    }
+
+    .stat-box p {
+        font-size: 13px;
+    }
+
+
+    /* ================= GALLERY ================= */
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+
+    /* ================= TESTIMONIAL ================= */
+
+    .testimonial-card {
+        width: 100%;
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .testimonial-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .testimonial-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-info h3 {
+        font-size: 24px;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .info-item span {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* ================= MAP ================= */
+
+    .map {
+        width: 100%;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 300px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-container ul {
+        padding: 0;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+    /* ================= WHATSAPP ================= */
+
+    .whatsapp {
+        width: 50px;
+        height: 50px;
+        right: 18px;
+        bottom: 18px;
+        font-size: 25px;
+    }
+
+
+    /* ================= TOP BUTTON ================= */
+
+    #topBtn {
+        right: 18px;
+        bottom: 80px;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content h3 {
+        font-size: 16px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-buttons .btn {
+        width: 90%;
+    }
+
+    .about-boxes {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container img {
+        height: 220px;
+    }
+
+    .stats .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-box h2 {
+        font-size: 23px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+}
