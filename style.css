@@ -846,7 +846,7 @@ footer a:hover {
 
   /* ================= NAVBAR ================= */
 
-   .navbar {
+     .navbar {
         padding: 15px 5%;
     }
 
@@ -859,7 +859,6 @@ footer a:hover {
         color: white;
         font-size: 26px;
         cursor: pointer;
-        z-index: 1001;
     }
 
     .nav-links {
@@ -871,8 +870,8 @@ footer a:hover {
         background: #0077b6;
         flex-direction: column;
         align-items: center;
-        gap: 0;
         padding: 20px 0;
+        gap: 20px;
         z-index: 1000;
     }
 
@@ -883,13 +882,21 @@ footer a:hover {
     .nav-links li {
         width: 100%;
         text-align: center;
-        padding: 12px 0;
     }
 
     .nav-links a {
         color: white;
         font-size: 16px;
     }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        min-height: 90vh;
+        padding: 100px 20px 60px;
+    }
+
 
   /* ================= HERO ================= */
 
