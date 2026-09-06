@@ -462,6 +462,255 @@ header {
   background: #0077b6;
 }
 
+
+/*======================
+   PRODUCT CATALOGUE
+   (Store Style)
+=======================*/
+
+.catalogue {
+  padding: 100px 0;
+  background: #f0f7fc;
+}
+
+/* Filter Tabs */
+.cat-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.cat-tab {
+  padding: 9px 24px;
+  border: 2px solid #00a8ff;
+  background: transparent;
+  color: #0077b6;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.cat-tab:hover,
+.cat-tab.active {
+  background: #00a8ff;
+  color: white;
+}
+
+/* ---- Store Grid ---- */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+/* ---- Store Card ---- */
+.store-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 119, 182, 0.15);
+}
+
+/* Image wrapper */
+.store-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background: #eaf4fb;
+  overflow: hidden;
+}
+
+.store-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.store-card:hover .store-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* Badge on image */
+.store-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #0077b6;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  z-index: 2;
+}
+
+.store-tag.popular {
+  background: linear-gradient(135deg, #f77f00, #e63946);
+}
+
+/* Card info section */
+.store-info {
+  padding: 22px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.store-category {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #00a8ff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 6px;
+}
+
+.store-info h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.store-desc {
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.75;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/* Price + button row */
+.store-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #e8f2f8;
+  flex-wrap: wrap;
+}
+
+.store-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.store-original {
+  font-size: 13px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.store-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0077b6;
+}
+
+.store-discount {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e63946;
+  background: #fff0f1;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.store-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00a8ff;
+  color: white;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.25s;
+  white-space: nowrap;
+}
+
+.store-btn:hover {
+  background: #0077b6;
+}
+
+/* Hidden (filter) */
+.store-card.hidden {
+  display: none;
+}
+
+/* CTA Banner */
+.cat-cta {
+  margin-top: 60px;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  border-radius: 20px;
+  padding: 45px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: white;
+}
+
+.cat-cta-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cat-cta-text p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  max-width: 520px;
+  font-size: 15px;
+}
+
+.cat-cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cat-cta-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-4px);
+}
+
+.cat-cta-btn i {
+  font-size: 20px;
+}
+
+
+
+
 /*======================
       SERVICES
 =======================*/
@@ -586,18 +835,52 @@ header {
       TESTIMONIAL
 =======================*/
 
+/* =========================
+       TESTIMONIAL
+========================= */
+
 .testimonial {
   padding: 100px 0;
-
   background: white;
 }
 
+/* Customer cards area */
+.testimonial-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Horizontal scrolling */
+.testimonial-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  padding: 20px 70px 40px;
+
+  box-sizing: border-box;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+}
+
+.testimonial-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Individual customer card */
 .testimonial-card {
-  width: 700px;
+  flex: 0 0 700px;
 
-  max-width: 95%;
+  max-width: 85%;
 
-  margin: auto;
+  margin: 0;
 
   background: white;
 
@@ -608,11 +891,14 @@ header {
   border-radius: 20px;
 
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+  box-sizing: border-box;
 }
 
+
+/* Customer image */
 .testimonial-card img {
   width: 110px;
-
   height: 110px;
 
   border-radius: 50%;
@@ -622,16 +908,22 @@ header {
   object-fit: cover;
 }
 
+
+/* Customer name */
 .testimonial-card h3 {
   margin-top: 20px;
 
   color: #0077b6;
 }
 
+
+/* Verified customer */
 .testimonial-card span {
   color: #888;
 }
 
+
+/* Customer review */
 .testimonial-card p {
   margin-top: 25px;
 
@@ -641,6 +933,51 @@ header {
 
   font-style: italic;
 }
+
+
+/* =========================
+       ARROW BUTTONS
+========================= */
+
+.testimonial-btn {
+  position: absolute;
+
+  z-index: 10;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #0077b6;
+
+  color: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-btn:hover {
+  background: #005f91;
+}
+
+.testimonial-btn.left {
+  left: 10px;
+}
+
+.testimonial-btn.right {
+  right: 10px;
+}
+
+
+
 /*=========================
        CONTACT
 =========================*/
